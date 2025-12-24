@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"] // Map the @ alias to the src directory
+    },
+    // ... other options
+  },
+  // ... other config (e.g., "include": ["src"])
+}

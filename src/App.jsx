@@ -1,18 +1,18 @@
-import { Navbar } from "@/layout/Navbar";
-import { Hero } from "@/sections/Hero";
-import { About } from "@/sections/About";
-import { Projects } from "@/sections/Projects";
-import { Experience } from "@/sections/Experience";
-import { Testimonials } from "@/sections/Testimonials";
-import { Contact } from "@/sections/Contact";
-import { Footer } from "./layout/Footer";
+import Footer from "@/layouts/Footer"
+import Navbar from "@/layouts/Navbar"
+import About from "@/sections/About"
+import Contact from "@/sections/Contact"
+import Experience from "@/sections/Experience"
+import Hero from "@/sections/Hero"
+import Projects from "@/sections/Projects"
+import Testimonials from "@/sections/Testimonials"
 
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <main>
-        <Hero />
+        <Hero/>
         <About />
         <Projects />
         <Experience />
