@@ -14,6 +14,7 @@ const skills = [
   "JavaScript",
   "RxJs",
   "NgRx",
+  "Signals",
   "Angular Material",
   "PrimeNg",
   "Taiga UI",
@@ -79,7 +80,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 <span className="text-primary glow-text">Проектирую</span>{" "}
-                и <span className="text-primary glow-text">воплощаю</span> качественные web-проекты. 
+                и <span className="text-primary glow-text">воплощаю</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Привет, я Артур — Frontend-разработчик (Angular/TypeScript). Я создаю масштабируемые веб-приложения, которые превращают технические решения в ценность для бизнеса и удобство для пользователей.
@@ -88,13 +89,20 @@ const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+              <a
+                href="/CV_Kamalov_Artur.pdf"
+                download="CV_Kamalov_Artur.pdf"
+              >
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}

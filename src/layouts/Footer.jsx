@@ -1,9 +1,7 @@
-import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Github } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: "https://github.com/artur-kamalov?tab=repositories", label: "GitHub" },
 ];
 
 const footerLinks = [

@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import TgIcon from "@/components/TgIcon";
 
 const contactInfo = [
   {
@@ -26,7 +27,13 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Russia, Chelyabinsk",
+    value: "Russia, Moscow",
+  },
+    {
+    icon: TgIcon,
+    label: "Telegram",
+    href: "https://t.me/artur_dot_hpp",
+    value: "@artur_dot_hpp",
   },
 ];
 
@@ -51,7 +58,6 @@ const Contact = () => {
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-      console.log("EmailJS Config:", { serviceId, templateId, publicKey });
 
       if (!serviceId || !templateId || !publicKey) {
         throw new Error(
@@ -76,7 +82,6 @@ const Contact = () => {
       });
       setFormData({ name: "", email: "", message: "", });
     } catch (err) {
-      console.error("EmailJS error:", err);
       setSubmitStatus({
         type: "error",
         message:
