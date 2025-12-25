@@ -78,18 +78,11 @@ const Hero = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
-                <br />
-                experiences with
-                <br />
-                <span className="font-serif italic font-normal text-white">
-                  precision.
-                </span>
+                <span className="text-primary glow-text">Проектирую</span>{" "}
+                и <span className="text-primary glow-text">воплощаю</span> качественные web-проекты. 
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Artur — a Frontend developer in
-                Angular and TypeScript. I build scalable, performant web
-                applications that users love.
+                Привет, я Артур — Frontend-разработчик (Angular/TypeScript). Я создаю масштабируемые веб-приложения, которые превращают технические решения в ценность для бизнеса и удобство для пользователей.
               </p>
             </div>
 
