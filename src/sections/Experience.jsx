@@ -48,12 +48,11 @@ const Experience = () => {
           <h2
             className="text-4xl md:text-5xl font-bold
            mt-4 mb-6 animate-fade-in animation-delay-100
-            text-secondary-foreground"
+            text-white"
           >
-            Experience that{" "}
-            <span className="font-serif italic font-normal text-white">
-              {" "}
-              speaks volumes.
+            Профессиональный путь и{" "}
+            <span className=" text-secondary-foreground">
+              достижения.
             </span>
           </h2>
 
@@ -61,14 +60,13 @@ const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            Мой путь профессионального развития: от увлеченного новичка до опытного разработчика, способного самостоятельно с нуля создавать масштабируемые продукты, готовые к росту вместе с бизнесом
           </p>
         </div>
 
         {/* Timeline */}
         <div className="relative">
-          <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]" />
+          <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]" />
 
           {/* Experience Items */}
           <div className="space-y-12">
